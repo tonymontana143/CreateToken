@@ -23,7 +23,7 @@ Smart contract is an ERC-20 token. Name of token "AITU_Iliias", it has some func
     }
 ```
 - Get transaction receiver
-  ```solidity
+```solidity
   function getTransactionReceiver() public view returns (address) {
         return owner;
     }
