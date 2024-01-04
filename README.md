@@ -1,1 +1,1 @@
-# CreateToken
+# University Token
