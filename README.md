@@ -6,22 +6,27 @@ Smart contract is an ERC-20 token. Name of token "AITU_Iliias", it has some func
 ![image](https://github.com/tonymontana143/CreateToken/assets/125411745/d5b71de7-4ca4-4c74-861f-2a5b562d4d72)
 ## Examples
 - Create 2000 tokens as initial supply
+ ```solidity
   _mint(msg.sender, 2000);
-
+```
 - Get latest transaction timestamp
+```solidity
   function getLatestTransactionTimestamp() public view returns (uint256) {
         require(totalSupply() > 0, "Error");
         return block.timestamp;
     }-
+```
 - Get transaction sender
+```solidity
   function getTransactionSender() public view returns (address) {
         return msg.sender;
     }
+```
 - Get transaction receiver
-  '''
+  ```solidity
   function getTransactionReceiver() public view returns (address) {
         return owner;
     }
-  '''
+  ```
 ## License
   https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/LICENSE 
