@@ -18,8 +18,10 @@ Smart contract is an ERC-20 token. Name of token "AITU_Iliias", it has some func
         return msg.sender;
     }
 - Get transaction receiver
+  '''
   function getTransactionReceiver() public view returns (address) {
         return owner;
     }
+  '''
 ## License
   https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/LICENSE 
